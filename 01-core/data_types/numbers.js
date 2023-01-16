@@ -29,3 +29,9 @@ console.log("=> ~ increment", increment);
 
 const decrement = A--;
 console.log("=> ~ decrement", decrement);
+
+// integer / float -> number
+const integer = 3;
+const float = 3.14;
+console.log("=> ~ typeof integer", typeof integer);
+console.log("=> ~ typeof float", typeof float);
