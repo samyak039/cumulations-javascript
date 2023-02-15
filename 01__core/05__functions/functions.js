@@ -50,5 +50,27 @@ function User(firstName, lastName, dob) {
   };
 }
 
-let samyakUser = User('Samyak', 'Bardiya', Date('1999-11-30'));
+let samyakUser = User("Samyak", "Bardiya", Date("1999-11-30"));
 console.log("=> ~ samyakUser", samyakUser);
+
+function add7(number) {
+  return number + 7;
+}
+console.log("add7: " + add7(3));
+
+function multiply(a, b) {
+  return a * b;
+}
+console.log("multiply: " + multiply(2, 5));
+
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+console.log("capitalise: " + capitalize('lowercase'));
+console.log("capitalise: " + capitalize('UPPERCASE'));
+console.log("capitalise: " + capitalize('BoTh'));
+
+function lastLetter(string) {
+  return string.slice(-1);
+}
+console.log("lastLetter: " + lastLetter('abcd'));
