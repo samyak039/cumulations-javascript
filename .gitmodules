@@ -1,6 +1,6 @@
-[submodule "00__extra/odin-javascript-exercises"]
-	path = 00__extra/odin-javascript-exercises
-	url = git@github.com:samyak039/odin-javascript-exercises.git
 [submodule "00__extra/odin-rock-paper-scissors"]
 	path = 00__extra/odin-rock-paper-scissors
 	url = git@github.com:samyak039/odin-rock-paper-scissors.git
+[submodule "00__extra/odin-javascript-exercises"]
+	path = 00__extra/odin-javascript-exercises
+	url = git@github.com:samyak039/odin-javascript-exercises.git
