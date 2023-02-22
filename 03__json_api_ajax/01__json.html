@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <script>
+      const jsonText = `{
+        "browsers": {
+          "firefox": {
+            "name": "Firefox",
+            "pref_url": "about:config",
+            "releases": {
+              "1": {
+                "release_date": "2004-11-09",
+                "status": "retired",
+                "engine": "Gecko",
+                "engine_version": "1.7"
+              }
+            }
+          }
+        }
+      }`;
+      let json = JSON.parse(jsonText);
+
+      console.log("=> ~ json object:", JSON.parse(jsonText));
+      console.log("=> ~ json string:", JSON.stringify(json));
+    </script>
+  </body>
+</html>
