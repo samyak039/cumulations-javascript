@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timers</title>
+  </head>
+  <body>
+    <script>
+      const timeFunc = (n) => {
+        console.log(`Hello after ${n} seconds`);
+      };
+
+      let counter = 0;
+      const intervalFunc = (n) => {
+        console.log(`Hello there, ${counter++}`);
+      };
+
+      const timerId = setInterval(intervalFunc, 3 * 1000, 3);
+
+      setTimeout(timeFunc, 1 * 1000, 1);
+      setTimeout(timeFunc, 2 * 1000, 2);
+      setTimeout(timeFunc, 3 * 1000, 3);
+      setTimeout(timeFunc, 4 * 1000, 4);
+      setTimeout(timeFunc, 5 * 1000, 5);
+      setTimeout(timeFunc, 6 * 1000, 6);
+      setTimeout(timeFunc, 7 * 1000, 7);
+      setTimeout(timeFunc, 8 * 1000, 8);
+      setTimeout(timeFunc, 9 * 1000, 9);
+      setTimeout(timeFunc, 10 * 1000, 10);
+      setTimeout(timeFunc, 11 * 1000, 11);
+      setTimeout(timeFunc, 12 * 1000, 12);
+
+      setTimeout((e) => {
+        clearInterval(timerId);
+      }, 20 * 1000);
+    </script>
+  </body>
+</html>
