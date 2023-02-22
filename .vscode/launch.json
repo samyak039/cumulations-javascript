@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "type": "firefox",
+      "request": "launch",
+      "reAttach": true,
+      "name": "Launch index.html",
+      "file": "${file}"
+      // "file": "${workspaceFolder}/index.html"
+    }
+  ]
+}
